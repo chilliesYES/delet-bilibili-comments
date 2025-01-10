@@ -43,8 +43,8 @@ while True:
         json_to_sql.main(connect, mode)
         go_del.main(connect)
     elif ask0 == '3':
-        rr = Path('json_folder/json_r/');rr.mkdir(exist_ok=True)
-        tt = Path('json_folder/jsont/');tt.mkdir(exist_ok=True)
+        rr = Path('json_folder/json_r/');rr.mkdir(parents=True, exist_ok=True)
+        tt = Path('json_folder/jsont/');tt.mkdir(parents=True, exist_ok=True)
     elif ask0 == '4':
         sys.exit()
 
