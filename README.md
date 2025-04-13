@@ -20,7 +20,7 @@ sql数据库结构
 使用前需要在config文件里把你的csrf和cookies和user-agent填进去。
 csrf的位置:在个人主页打开f12 cookie选项下找到bili_jct字段就是csrf（以后有心情做扫码）
 config里还有sql数据库的相关信息也得填，如不想用mysql得自己改
-go_del下有个start(9999,1)可以不动，第一个是上限第二个是下限，如果中途有中断在his.txt里可以找到中断位置(第一遍是这么写的懒得改了)
+go_del下有个start(9999,1)可以不动，第一个是上限第二个是下限，如果中途有中断在config里的num_del有保存位置不用担心从头删除造成的时间浪费
 如果你是从aicu获取数据那就把json放jsont下，如果是从b站api获取直接运行main就行了
 由于aicu的api有机器验证强烈建议手点api改参数通过复制粘贴的方式把数据弄出来
 
