@@ -15,7 +15,7 @@ b站api收集并保存原始数据
 def get_reply(lim = 999999):
     if lim == 0:
         lim = 999999
-    cfolder = Path('json_folder\json_r');cfolder.mkdir(exist_ok=True, parents=True)
+    cfolder = Path('json_folder/json_r');cfolder.mkdir(exist_ok=True, parents=True)
     for k in cfolder.iterdir():
         k.unlink()
     config = configparser.RawConfigParser()
@@ -62,7 +62,7 @@ def get_reply(lim = 999999):
 def get_like(lim = 999999):
     if lim == 0:
         lim = 999999
-    cfolder = Path('json_folder\json_z');cfolder.mkdir(exist_ok=True, parents=True)
+    cfolder = Path('json_folder/json_z');cfolder.mkdir(exist_ok=True, parents=True)
     for k in cfolder.iterdir():
         k.unlink()
     config = configparser.RawConfigParser()
